@@ -1,0 +1,7 @@
+@font-face { font-family: 'istok_webbold'; src: url("../fonts/istokweb-bold-webfont.eot"); src: url("../fonts/istokweb-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/istokweb-bold-webfont.woff") format("woff"), url("../fonts/istokweb-bold-webfont.ttf") format("truetype"), url("../fonts/istokweb-bold-webfont.svg#istok_webbold") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'istok_webitalic'; src: url("../fonts/istokweb-italic-webfont.eot"); src: url("../fonts/istokweb-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/istokweb-italic-webfont.woff") format("woff"), url("../fonts/istokweb-italic-webfont.ttf") format("truetype"), url("../fonts/istokweb-italic-webfont.svg#istok_webitalic") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'istok_webregular'; src: url("../fonts/istokweb-regular-webfont.eot"); src: url("../fonts/istokweb-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/istokweb-regular-webfont.woff") format("woff"), url("../fonts/istokweb-regular-webfont.ttf") format("truetype"), url("../fonts/istokweb-regular-webfont.svg#istok_webregular") format("svg"); font-weight: normal; font-style: normal; }
+
+* + html .header__cont a, * + html .header__cont span, * + html .header__nav i, * + html .header__nav span { display: inline; }

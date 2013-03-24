@@ -1,0 +1,196 @@
+@import "base";
+/* ------------------------------------- Reset css -------------------------------------------- */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5,
+h6, p, blockquote, pre,a, abbr, acronym, address, big,
+cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small,
+strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt,
+dd, ol, ul, li,fieldset, form, label, legend,table, caption,
+tbody, tfoot, thead, tr, th, td,article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary,time, mark, audio, video { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+body, html {
+    height: 100%
+}
+img,fieldset {border:none;}
+input[type="submit"], button {cursor:pointer;}
+input[type='submit']::-moz-focus-inner{padding:0;border:0}
+textarea {overflow: auto;}
+input, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+input, textarea, select,button,
+h1,h2,h3,h4,h5,h6,a,span,a:focus {
+    outline: none;
+}
+ul,ol {
+    list-style-type: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header,
+hgroup, menu, nav, section { 
+    display: block;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+*{-webkit-text-size-adjust: none; }
+/* ------------------------------------- //END Reset css --------------------------------------- */
+/* ----------------------------------------- Main styles --------------------------------------- */
+body{
+    min-width: 1000px;
+    padding: 0 5px;
+    color: #474747;
+    @include r;
+    font-size: 14px;
+    line-height: 1.15;
+}
+a{
+    color:#00919e;
+    &:hover{
+        text-decoration:none
+    }
+}
+.l-layout {
+    margin: 0 auto -89px;
+    position: relative;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    width: 1000px;
+} 
+.push {
+    clear: both;
+    height: 89px;
+}
+.wrapper {
+    overflow: hidden;
+}
+.wrap {
+    @extend %clr;
+}
+.clr {
+    clear: both;
+}
+/* ------------------------------------ //END Main styles --------------------------------------- */
+ 
+/* ----------------------------------------- Header --------------------------------------------- */
+.header {
+    padding-top: 21px;
+}
+.header__logo {
+    float: left;
+    margin-right: 67px;
+    a {
+        display: block;
+        @extend %hide-text;
+        @include sized-sprite($icons, logo);
+    }
+}
+.header__slogan {
+    float: left;
+    margin-top: 11px;
+    color: #848fa9;
+    font: bold 16px Tahoma,sans-serif;
+    text-transform: uppercase;
+}
+.header__cont {
+    float: right;
+    margin-bottom: 36px;
+    strong {
+        display: block;
+        margin-bottom: 7px;
+        color: #848fa9;
+        font: bold 20px Tahoma,sans-serif;
+    }
+    a {
+        display: inline-block;
+        padding: 6px 22px;
+        color: #fff;
+        @include border-radius(3px 3px 0 0);
+        background: #f1a00c;
+        text-decoration: none;
+        @include box-shadow(0 2px 5px rgba(74,42,16,.3));
+        @include background-image(linear-gradient(#f1a00c, #cf2303));
+    }
+    span {
+        display: inline-block;
+        line-height: 1;
+        border-bottom: 1px dotted;
+    }
+}
+.header__nav-wrap {
+    background: url(../img/enter.png) -54px 0 repeat;
+    @include border-radius(3px);
+    @include box-shadow(0 1px 1px rgba(0,68,93,.75));
+    overflow: hidden;
+    clear: both;
+}
+.header__nav {
+    float: left;
+    width: 807px;
+    background: url(../img/nav.png) -3px 0 repeat;
+    
+    li {
+        float: left;
+    }
+    a {
+        display: block;
+        padding: 0 36px 0 33px;
+        height: 37px;
+        line-height: 37px;
+        @include b;
+        font-size: 13px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+            span {
+                text-decoration: none;
+            }
+        }
+    }
+    .is-active {
+        a {
+           background: url(../img/nav-h.png) 0 0 repeat;
+        }
+    }
+    span {
+        display: inline-block;
+        text-decoration: underline;
+    }
+    i {
+        display: inline-block;
+        vertical-align: top;
+        margin: 10px 7px 0 0;
+    }
+    .icon-home {@include sized-sprite($icons, home);}
+    .icon-cube {@include sized-sprite($icons, cube);}
+    .icon-case {@include sized-sprite($icons, case);}
+    .icon-phone {@include sized-sprite($icons, phone);}
+}
+.header__enter {
+    background: url(../img/enter.png) 0 0 repeat;
+}
+
+/* -------------------------------------- //END Header ------------------------------------------ */
+
+/* ------------------------------------- Independent blocks -------------------------------------- */
+/* ---------------------------------- //END Independent blocks ----------------------------------- */
+
+/* ----------------------------------------- Footer ---------------------------------------------- */
+.footer {
+    position: relative;
+    margin: 0 auto;
+    height: 89px;
+    width: 1000px;
+    background: #ccc;
+}
+/* -------------------------------------- //END Footer ------------------------------------------- */

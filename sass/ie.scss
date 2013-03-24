@@ -1,0 +1,20 @@
+@import "base";
+// ie6-8
+.lteie8 {
+
+}
+// ie7
+
+*+ html {
+	.header__cont a,
+	.header__cont span,
+	.header__nav i,
+	.header__nav span, {
+		display: inline;
+	}
+}
+
+// ie6
+* html {
+
+}
