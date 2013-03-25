@@ -4,4 +4,7 @@
 
 @font-face { font-family: 'istok_webregular'; src: url("../fonts/istokweb-regular-webfont.eot"); src: url("../fonts/istokweb-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/istokweb-regular-webfont.woff") format("woff"), url("../fonts/istokweb-regular-webfont.ttf") format("truetype"), url("../fonts/istokweb-regular-webfont.svg#istok_webregular") format("svg"); font-weight: normal; font-style: normal; }
 
-* + html .header__cont a, * + html .header__cont span, * + html .header__nav i, * + html .header__nav span { display: inline; }
+* + html .header__cont a, * + html .header__cont span, * + html .header__nav i, * + html .header__nav span, * + html .slider__text span:first-child, * + html .slider__nav i, * + html .propose__col { display: inline; }
+* + html .header { position: static; }
+* + html .header__nav-wrap span { cursor: pointer; }
+* + html .header__enter span { line-height: 37px; padding: 0 10px 0 8px; }

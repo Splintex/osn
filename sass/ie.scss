@@ -9,8 +9,25 @@
 	.header__cont a,
 	.header__cont span,
 	.header__nav i,
-	.header__nav span, {
+	.header__nav span,
+	.slider__text span:first-child,
+	.slider__nav i,
+	.propose__col {
 		display: inline;
+	}
+	.header {
+		position: static;
+	}
+	.header__nav-wrap {
+		span {
+			cursor: pointer;
+		}
+	}
+	.header__enter {
+		span {
+			line-height: 37px;
+			padding: 0 10px 0 8px;
+		}
 	}
 }
 

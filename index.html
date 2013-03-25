@@ -6,6 +6,7 @@
 	<title>Index</title>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
     <script src="js/jquery.tools.min.js"></script>
+    <script src="js/jquery.cycle.all.js"></script>
     <script src="js/common.js"></script>  
     <link href='http://fonts.googleapis.com/css?family=Istok+Web:400,700,400italic&subset=cyrillic,latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]> 
@@ -13,7 +14,8 @@
     <![endif]-->
 </head>
 <body>
-<div class="l-layout">
+<section class="l-layout">
+    <!-- BEGINN .header -->
     <header class="header">
         <h1 class="header__logo"><a href="#">Оснастка-Юг</a></h1>
         <span class="header__slogan">Поставки в превосходной степени</span>
@@ -29,13 +31,229 @@
                 <li><a href="#"><i class="icon-phone"></i><span>Контакты</span></a></li>
             </ul>
             <ul class="header__enter">
-                <li><a href="#"><i class=""></i>Вход</a></li>
-                <li><a href="#">Регистрация</a></li>
+                <li><a href="#"><i class="icon-door"></i><span>Вход</span></a></li>
+                <li><a href="#"><span>Регистрация</span></a></li>
             </ul>
         </nav>
     </header>
+    <!-- END .header -->
+    <!-- BEGIN .slider -->
+    <div class="slider">
+        <div class="slider__wrap js-slider">
+            <a href="#" class="slider__item">
+                <img src="img/slider-img.jpg" alt="">
+                <div class="slider__text">
+                    <span>Скидка <strong>5%</strong></span>
+                    <span>при использовании дисконтной карты</span>
+                </div>
+            </a>
+            <a href="#" class="slider__item">
+                <img src="img/slider-img.jpg" alt="">
+                <div class="slider__text">
+                    <span>Скидка <strong>5%</strong></span>
+                    <span>при использовании дисконтной карты</span>
+                </div>
+            </a>
+            <a href="#" class="slider__item">
+                <img src="img/slider-img.jpg" alt="">
+                <div class="slider__text">
+                    <span>Скидка <strong>5%</strong></span>
+                    <span>при использовании дисконтной карты</span>
+                </div>
+            </a>
+            <a href="#" class="slider__item">
+                <img src="img/slider-img.jpg" alt="">
+                <div class="slider__text">
+                    <span>Скидка <strong>5%</strong></span>
+                    <span>при использовании дисконтной карты</span>
+                </div>
+            </a>
+            <a href="#" class="slider__item">
+                <img src="img/slider-img.jpg" alt="">
+                <div class="slider__text">
+                    <span>Скидка <strong>5%</strong></span>
+                    <span>при использовании дисконтной карты</span>
+                </div>
+            </a>
+            <a href="#" class="slider__item">
+                <img src="img/slider-img.jpg" alt="">
+                <div class="slider__text">
+                    <span>Скидка <strong>5%</strong></span>
+                    <span>при использовании дисконтной карты</span>
+                </div>
+            </a>
+        </div>
+        <button class="slider__nav slider__nav-left"><i></i></button>
+        <button class="slider__nav slider__nav-right"><i></i></button>
+        <div class="slider__pagin"></div>
+    </div>
+    <!-- END .slider -->
+    <!-- BEGIN .propose -->
+    <h2 class="title-l-2">Мы предлагаем</h2>
+    <div class="propose">
+        <div class="wrapper">
+            <div class="propose__wrap">
+                <div class="propose__col">
+                    <h3 class="title-l-3"><i class="icon-1"></i>Отопление, водоснабжение, канализация</h3>
+                    <ul>
+                        <li><a href="#">Отопление</a></li>
+                        <li><a href="#">Водоснабжение</a></li>
+                        <li><a href="#">Канализация</a></li>
+                    </ul>
+                </div>
+                <div class="propose__col">
+                    <h3 class="title-l-3"><i class="icon-2"></i>Сантехнические приборы</h3>
+                    <ul>
+                        <li><a href="#">Санфаянс и мойки</a></li>
+                        <li><a href="#">Смесители и аксессуары</a></li>
+                        <li><a href="#">Ванны и аксессуары</a></li>
+                        <li><a href="#">Мебель для ванной комнаты</a></li>
+                        <li><a href="#">Душевые кабины ...</a></li>
+                    </ul>
+                </div>
+                <div class="propose__col">
+                    <h3 class="title-l-3"><i class="icon-3"></i>Вентиляция</h3>
+                    <ul>
+                        <li><a href="#">Вентиляторы</a></li>
+                        <li><a href="#">Вентиляционные установки</a></li>
+                        <li><a href="#">Противопожарные клапаны</a></li>
+                        <li><a href="#">Воздушные заслонки</a></li>
+                        <li><a href="#">Воздухонагреватели ...</a></li>
+                    </ul>
+                </div>
+                <div class="propose__col">
+                    <h3 class="title-l-3"><i class="icon-4"></i>Электрооборудование</h3>
+                    <ul>
+                        <li><a href="#">Кабель и провод</a></li>
+                        <li><a href="#">Счетчики энергии</a></li>
+                        <li><a href="#">Электромонтажные изделия</a></li>
+                        <li><a href="#">Пускорегулирующая аппаратура</a></li>
+                        <li><a href="#">Кабеленесущие системы ...</a></li>
+                    </ul>
+                </div>
+                <div class="propose__col">
+                    <h3 class="title-l-3"><i class="icon-5"></i>Инструмент, крепеж</h3>
+                    <ul>
+                        <li><a href="#">Инструмент</a></li>
+                        <li><a href="#">Крепеж</a></li>
+                    </ul>
+                </div>
+                <div class="propose__col">
+                    <h3 class="title-l-3"><i class="icon-6"></i>Шины, аккумуляторы</h3>
+                    <ul>
+                        <li><a href="#">Легковые шины</a></li>
+                        <li><a href="#">Грузовые шины</a></li>
+                        <li><a href="#">Сельхоз шины</a></li>
+                        <li><a href="#">Аккумуляторы</a></li>
+                        <li><a href="#">Комплектующие</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END .propose -->
+    <!-- BEGIN .best-sell -->
+    <div class="best-sellers">
+        <h2 class="title-l-2"><i></i>ЛИДЕРЫ ПРОДАЖ</h2>
+        <div class="scroll">
+            <div class="scroll__wrap js-scroll">
+                <div class="scroll__items">
+                    <a class="scroll__slide" href="#">
+                        <div>
+                            <img src="img/prod1.jpg" alt="">
+                        </div>
+                        <span>6PK-223, Кабелерез</span>
+                    </a>
+                    <a class="scroll__slide" href="#">
+                        <div>
+                            <img src="img/prod2.jpg" alt="">
+                        </div>
+                        <span>8150 VDE, Набор высоковольтных инструментов 24 предмета</span>
+                    </a>
+                    <a class="scroll__slide" href="#">
+                        <div>
+                            <img src="img/prod1.jpg" alt="">
+                        </div>
+                        <span>6PK-223, Кабелерез</span>
+                    </a>
+                    <a class="scroll__slide" href="#">
+                        <div>
+                            <img src="img/prod2.jpg" alt="">
+                        </div>
+                        <span>8150 VDE, Набор высоковольтных инструментов 24 предмета</span>
+                    </a>
+                    <a class="scroll__slide" href="#">
+                        <div>
+                            <img src="img/prod1.jpg" alt="">
+                        </div>
+                        <span>6PK-223, Кабелерез</span>
+                    </a>
+                    <a class="scroll__slide" href="#">
+                        <div>
+                            <img src="img/prod2.jpg" alt="">
+                        </div>
+                        <span>8150 VDE, Набор высоковольтных инструментов 24 предмета</span>
+                    </a>
+                    <a class="scroll__slide" href="#">
+                        <div>
+                            <img src="img/prod1.jpg" alt="">
+                        </div>
+                        <span>6PK-223, Кабелерез</span>
+                    </a>
+                    <a class="scroll__slide" href="#">
+                        <div>
+                            <img src="img/prod2.jpg" alt="">
+                        </div>
+                        <span>8150 VDE, Набор высоковольтных инструментов 24 предмета</span>
+                    </a>
+                </div>      
+            </div>
+            <button class="scroll__prev"></button>
+            <button class="scroll__next"></button>
+        </div>
+    </div>
+    <!-- END .best-sell -->
+    <div class="wrapper wrapper_index">
+        <!-- BEGIN .about -->
+        <article class="about">
+            <h2 class="title-l-2"><i></i>О компании</h2>
+            <p>Все сантехническое оборудование и аксессуары для ванной комнаты наш магазин смесителей представляет по самым низким ценам. Пройдя простую регистрацию и став нашим постоянным клиентом, вы в любой момент сможете купить смеситель и аксессуары для ванной, краны шаровые и мойки, мебель для ванной и т. д., воспользовавшись предоставленной нами скидкой. При выборе любого сантехнического оборудования возникает проблема соответствия предлагаемого товара желанию потребителя. Кроме того, необходимо оценить особенности помещения, для которого предназначено то или иное изделие. Поэтому можно выделить ряд рекомендаций по выбору из наличествующего ассортимента. Ванна в первую очередь должна отвечать габаритам комнаты. В наличии также унитазы с универсальным выпуском, которые подойдут практически для любой системы. В ассортименте представлены классические напольные унитазы, приставные и подвесные модели. Они надежны и могут быть вписаны в комнаты самого разного стилистического оформления.  </p>
+        </article>
+        <!-- END .about -->
+        <!-- BEGIN .article-list -->
+        <div class="article-list">
+            <h2 class="title-l-2"><i></i>Статьи</h2>
+            <ul>
+                <li>
+                    <span><i></i>2012-10-18 00:07:01</span>
+                    <a href="#">Как выбрать биде?</a>
+                </li>
+                <li>
+                    <span><i></i>2012-10-18 00:07:01</span>
+                    <a href="#">Как выбрать биде?</a>
+                </li>
+                <li>
+                    <span><i></i>2012-10-18 00:07:01</span>
+                    <a href="#">Как выбрать биде?</a>
+                </li>
+            </ul>
+            <a href="#" class="link-all"><i></i>Все статьи</a>
+        </div>
+        <!-- END .article-list -->
+    </div>
     <div class="push"></div>
-</div>
-<footer class="footer"></footer>
+</section>
+<footer class="footer">
+    <span class="footer__copy">© Оснастка-Юг</span>
+    <nav class="footer__nav">
+        <ul>
+            <li><a href="#">Онас</a></li>
+            <li><a href="#">Гарантии</a></li>
+            <li><a href="#">Партнеры</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="footer__soc"><img src="img/soc.png" alt=""></div>
+</footer>
 </body>
 </html>

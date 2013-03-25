@@ -53,7 +53,7 @@ body{
     line-height: 1.15;
 }
 a{
-    color:#00919e;
+    color: #0a90ce;
     &:hover{
         text-decoration:none
     }
@@ -79,10 +79,24 @@ a{
 .clr {
     clear: both;
 }
+.title-l-2 {
+    margin: 10px 0 9px;
+    @include b;
+    font-size: 20px;
+    color: #727c86;
+    text-transform: uppercase;
+}
+.title-l-3 {
+    @include b;
+    font-size: 18px;
+    color: #4c5257;
+}
 /* ------------------------------------ //END Main styles --------------------------------------- */
  
 /* ----------------------------------------- Header --------------------------------------------- */
 .header {
+    position: relative;
+    z-index: 2;
     padding-top: 21px;
 }
 .header__logo {
@@ -128,20 +142,23 @@ a{
 }
 .header__nav-wrap {
     background: url(../img/enter.png) -54px 0 repeat;
-    @include border-radius(3px);
-    @include box-shadow(0 1px 1px rgba(0,68,93,.75));
+    @include border-radius(3px 3px 0 0);
+    @include box-shadow(0 1px 2px rgba(0,68,93,.75));
     overflow: hidden;
     clear: both;
-}
-.header__nav {
-    float: left;
-    width: 807px;
-    background: url(../img/nav.png) -3px 0 repeat;
-    
     li {
         float: left;
     }
-    a {
+    span {
+        display: inline-block;
+        text-decoration: underline;
+    }
+    i {
+        display: inline-block;
+        vertical-align: top;
+        margin: 10px 7px 0 0;
+    }
+     a {
         display: block;
         padding: 0 36px 0 33px;
         height: 37px;
@@ -157,19 +174,15 @@ a{
             }
         }
     }
+}
+.header__nav {
+    float: left;
+    width: 807px;
+    background: url(../img/nav.png) -3px 0 repeat;
     .is-active {
         a {
            background: url(../img/nav-h.png) 0 0 repeat;
         }
-    }
-    span {
-        display: inline-block;
-        text-decoration: underline;
-    }
-    i {
-        display: inline-block;
-        vertical-align: top;
-        margin: 10px 7px 0 0;
     }
     .icon-home {@include sized-sprite($icons, home);}
     .icon-cube {@include sized-sprite($icons, cube);}
@@ -177,20 +190,158 @@ a{
     .icon-phone {@include sized-sprite($icons, phone);}
 }
 .header__enter {
-    background: url(../img/enter.png) 0 0 repeat;
+    overflow: hidden;
+    li {
+        float: left;
+        &:first-child {
+            a {
+                padding: 0 0 0 6px;
+            }
+            span {
+                border-left: 0;
+            }
+        }
+    }
+    a {
+        padding: 0 10px 0 0;
+        text-transform: capitalize;
+    }
+    span {
+        border-left: 1px solid;
+        line-height: 1;
+        padding: 8px 10px 8px 8px;
+    }
+    .icon-door {
+        margin: 8px 3px 0 0;
+        @include sized-sprite($icons,door);
+    }
 }
-
 /* -------------------------------------- //END Header ------------------------------------------ */
 
 /* ------------------------------------- Independent blocks -------------------------------------- */
+.slider {
+    position: relative;
+    margin-bottom: 28px;
+}
+.slider__wrap {
+    position: relative;
+    height: 281px;
+}
+.slider__item {
+    position: absolute;
+    height: 281px;
+    overflow: hidden;
+    img {
+        display: block;
+    }
+}
+.slider__text {
+    position: absolute;
+    top: 20px;
+    left: 54px;
+    color: #fff;
+    font-size: 22px;
+    @include b;
+    span {
+        display: block;
+        padding: 2px 17px 2px 10px;
+        background: #000;
+        background: rgba(0,0,0,.73);
+        &:first-child {
+            display: inline-block;
+            padding: 3px 17px 0 10px;
+        }
+    }
+    strong {
+        font-weight: normal;
+        font-size: 26px;
+        color: #f0b62c;
+    }
+}
+.slider__nav {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 32px;
+    height: 281px;
+    line-height: 281px;
+    text-align: center;
+    background: #000;
+    background: rgba(0,0,0,.57);
+    @include transition(background 500ms linear);
+    &:hover {
+        background: #000;
+    }
+    i {
+        display: inline-block;
+    }
+}
+.slider__nav-left {
+    left: 0;
+    i {
+        @include sized-sprite($icons, prev);
+    }
+}
+.slider__nav-right {
+    right: 0;
+    i {
+        @include sized-sprite($icons, next);
+    }
+}
+.slider__pagin {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    span {
+        display: inline-block;
+        margin-left: 10px;
+        width: 10px;
+        height: 10px;
+        background: #dcdcdf;
+        cursor: pointer;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    .is-active {
+        background: #ddc424;
+    }
+}
+
 /* ---------------------------------- //END Independent blocks ----------------------------------- */
 
 /* ----------------------------------------- Footer ---------------------------------------------- */
 .footer {
     position: relative;
     margin: 0 auto;
-    height: 89px;
+    padding: 13px 100px 0;
+    height: 76px;
     width: 1000px;
-    background: #ccc;
+    overflow: hidden;
+    background: #eff0ec url(../img/footer-bg.png) 100% 0 no-repeat;
+}
+.footer__copy {
+    float: left;
+    padding-top: 5px;
+}
+.footer__nav {
+    float: left;
+    margin-left: 15px;
+    padding-top: 5px;
+    @extend %clr;
+    li {
+        float: left;
+        margin-left: 50px;
+    }
+    a {
+        color: #3c3838;
+        font-size: 13px;
+    }
+}
+.footer__soc {
+    float: right;
 }
 /* -------------------------------------- //END Footer ------------------------------------------- */
