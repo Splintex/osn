@@ -1,7 +1,11 @@
 @import "base";
 // ie6-8
 .lteie8 {
-
+	.info-message {
+		div {
+			background: #e79609 !important;
+		}
+	}
 }
 // ie7
 
@@ -12,7 +16,8 @@
 	.header__nav span,
 	.slider__text span:first-child,
 	.slider__nav i,
-	.propose__col {
+	.propose__col,
+	.best-sellers .title-l-2, {
 		display: inline;
 	}
 	.header {

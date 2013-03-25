@@ -20,20 +20,20 @@
 	}
 	.title-l-3 {
 		position: relative;
-		margin-bottom: 15px;
+		margin-bottom: 17px;
 		i {
 			position: absolute;
 			left: -35px;
 			top: -7px;
 		}
-		.icon-1 {@include sized-sprite($icons, i1);}
-		.icon-2 {@include sized-sprite($icons, i2);}
-		.icon-3 {@include sized-sprite($icons, i3);}
-		.icon-4 {@include sized-sprite($icons, i4);}
-		.icon-5 {@include sized-sprite($icons, i5);}
-		.icon-6 {@include sized-sprite($icons, i6);}
 	}
 }
+.icon-1 {@include sized-sprite($icons, i1);}
+.icon-2 {@include sized-sprite($icons, i2);}
+.icon-3 {@include sized-sprite($icons, i3);}
+.icon-4 {@include sized-sprite($icons, i4);}
+.icon-5 {@include sized-sprite($icons, i5);}
+.icon-6 {@include sized-sprite($icons, i6);}
 .propose__wrap {
 	position: relative;
 	z-index: 2;
@@ -45,7 +45,7 @@
 .propose__col {
 	display: inline-block;
 	vertical-align: top;
-	margin: 0 91px 34px 0;
+	margin: 0 88px 29px 0;
 	width: 260px;
 	&:nth-child(2),
 	&:nth-child(3) {
@@ -57,19 +57,20 @@
 		color: #000;
 	}
 	li {
-		margin-bottom: 3px;
+		margin-bottom: 5px;
 	}
 }  
 
 .best-sellers {
 	margin-bottom: 28px;
-	padding-bottom: 35px;
+	padding-bottom: 31px;
 	border-top: 3px solid #96a5b2;
 	border-bottom: 3px solid #96a5b2;
 	.title-l-2 {
 		position: relative;
 		top: -31px;
 		display: inline-block;
+		margin-bottom: 20px;
 		padding-right: 13px;
 		background: #fff;
 		i {
@@ -84,7 +85,7 @@
 	position: relative;
 	button {
 		position: absolute;
-		top: 65px;
+		top: 62px;
 	}
 	.is-disabled {
 		display: none;
@@ -110,7 +111,11 @@
 	text-align: center;
 	border-right: 1px dotted #4c5257;
 	div {
-		height: 190px;
+		height: 187px;
+		line-height: 187px;
+	}
+	img {
+		vertical-align: middle;
 	}
 }
 .scroll__prev {
@@ -146,6 +151,7 @@
 	width: 300px;
 	.title-l-2 {
 		position: relative;
+		margin-bottom: 12px;
 		i {
 			position: absolute;
 			left: -33px;
@@ -158,7 +164,7 @@
 		border-bottom: 1px solid #a3a3a3;
 		span {
 			display: block;
-			margin-bottom: 2px;
+			margin-bottom: 3px;
 			font-size: 12px;
 			color: #727c86;
 		}
@@ -172,7 +178,7 @@
 		}
 	}
 	li {
-		margin-bottom: 17px;
+		margin-bottom: 19px;
 	}
 }
 .link-all {
